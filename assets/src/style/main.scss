@@ -1,0 +1,20 @@
+// Вспомогательные файлы
+@import "vars";
+
+// Подключение вендорных библиотек
+@import "vendors/normalize.min";
+
+// Подключение блоков
+@import "blocks/header";
+@import "blocks/search";
+@import "blocks/card";
+
+@import "blocks/res-header";
+@import "blocks/res-nav";
+@import "blocks/res-card";
+
+@import "blocks/footer";
+@import "blocks/btn-up";
+
+// Подключение моих стилей
+@import "my";

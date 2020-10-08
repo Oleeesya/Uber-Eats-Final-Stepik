@@ -1,0 +1,30 @@
+.res-nav {
+	display: flex;
+	width: 100%;
+	padding: 30px 0;
+
+	background-color: #ffffff;
+	border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+
+	&__link {
+		margin-right: 40px;
+
+		font-weight: 400;
+		font-size: 16px;
+		color: #626262;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.res-nav {
+		border: 0;
+
+		&__group {
+			display: none;
+		}
+	}
+}

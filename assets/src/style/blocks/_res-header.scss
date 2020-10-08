@@ -1,0 +1,79 @@
+.res-header {
+	position: relative;
+
+	display: flex;
+	max-width: 100%;
+	height: 364px;
+	margin-top: 78px;
+
+	background: url(./../img/restaurant/bg_restarant.jpg) no-repeat;
+	background-size: cover;
+
+	&__group {
+		z-index: 1;
+
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 100%;
+		max-width: 389px;
+		height: 204px;
+		margin-top: 70px;
+
+		background-color: #ffffff;
+		border-radius: 2px;
+		box-shadow: 0 0 16px rgba(117, 117, 117, 0.2);
+	}
+
+	&__title {
+		margin: 40px 0 0 0;
+
+		font-size: 36px;
+		color: 1d1d1d;
+	}
+
+	&__item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+		height: 70%;
+	}
+
+	&__text {
+		font-size: 14px;
+		color: #626262;
+	}
+
+	&__time {
+		padding: 10px 20px;
+
+		font-size: 13px;
+		color: #ffffff;
+
+		background-color: #000000;
+		border-radius: 16px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.res-header {
+		background: url(./../img/restaurant/bg_restarant.jpg) 80% 100% no-repeat;
+	}
+}
+
+@media (max-width: 768px) {
+	.res-header__group {
+		position: absolute;
+		top: 60%;
+		right: 0;
+		bottom: 0;
+		left: 0;
+
+		margin: 0 auto;
+	}
+
+	.res-header__title {
+		font-size: 24px;
+	}
+}
